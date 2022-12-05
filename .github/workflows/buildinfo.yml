@@ -3,7 +3,7 @@ on: push
 jobs:
   build-container:
     name: Build container
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
 
     - name: Checkout code from github
@@ -15,8 +15,8 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
-    - name: Setup Docker build x
-      uses: docker/setup-buildx-action@v2
+    #- name: Setup Docker build x
+    #  uses: docker/setup-buildx-action@v2
 
     - name: Build and push to Docker hub
       uses: docker/build-push-action@v3
