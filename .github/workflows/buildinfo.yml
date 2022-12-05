@@ -6,3 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         name: Checkout code from github
+      - name: Upload content
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-site
+          path: ./Docker-php
