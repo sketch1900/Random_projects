@@ -1,7 +1,8 @@
+name: Php Docker
 on: push
 jobs:
-  first-job:
+  build-project:
     runs-on: windows-latest
     steps:
-      - run: node --version
-      - run: npm --version
+      - uses: actions/checkout@v3
+        name: Checkout code from github
