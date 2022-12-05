@@ -1,0 +1,29 @@
+name: Dockerize php test
+on: push
+
+jobs:
+       runs-on: windows-latest
+       first-job:
+       steps: #i am testing to se if this works and how it works.
+              - run: node --version
+              - run: npm --version
+
+#build-container:
+#name: Build Docker container imagee
+#runs-on: ubuntu-latest
+#steps:
+#- name: Checkout code
+#- uses: actions/checkout@v2
+##- name: Publish to Github Packages
+#- uses: docker/build-push-action@v1
+      # with: 
+             # username: ${{ github.actor }}
+             # password: ${{ secrets.GITHUB_TOKEN }}
+              #registry: docker.docker-php
+              #repository: ${{ github.repository }}/next
+              #tags: latest, ${{ github.run_number }}
+              #run: |
+                #    docker build . --tag ghcr.io/sketch1900/php-docker-gcr-demo:latest
+               #      docker run ghcr.io/sketch1900/php-docker-gcr-demo:latest
+              #       docker push sketch1900/docker-php
+#
