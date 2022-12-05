@@ -1,9 +1,0 @@
-name: Dockerize php test
-on: push
-
-jobs:
-       runs-on: ubuntu-latest
-       first-job:
-       steps: #i am testing to se if this works and how it works.
-              - run: node --version
-              - run: npm --version
