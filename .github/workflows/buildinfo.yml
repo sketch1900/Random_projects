@@ -16,5 +16,5 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: .
-        push: true, 
+        push: true 
         tags: sketch1900/phpdocker:latest, sketch1900/phpdocker:${{ github.run_number }} #form of versioning
