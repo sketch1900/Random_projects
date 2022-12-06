@@ -2,14 +2,13 @@
 <html>
     <head>
         <h1>Test Page</h1>
+        <!-- css and js go here. -->
     </head>
     <body>
         <p>Some content goes here</p>
         <?php
-        $a = 6;
-        $b = 2;
-
-        echo "<p>" . $a * $b . "</p>";
+        //require 'Base.php';
+        //require 'book.php';
         ?>
     </body>
 </html>
